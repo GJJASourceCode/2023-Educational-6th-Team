@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3803965651589768014}
   m_Layer: 0
   m_Name: locker_2 (3)
-  m_TagString: Untagged
+  m_TagString: Obstruction
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295

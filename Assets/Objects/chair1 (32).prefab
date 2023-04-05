@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1067725261981941372}
   m_Layer: 0
   m_Name: chair1 (32)
-  m_TagString: Untagged
+  m_TagString: Obstruction
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295

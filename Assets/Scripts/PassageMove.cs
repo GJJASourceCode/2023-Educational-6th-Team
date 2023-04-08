@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RoadMove : MonoBehaviour
+public class PassageMove : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -13,5 +13,8 @@ public class RoadMove : MonoBehaviour
     void Update()
     {
         transform.position += new Vector3(0,0,-10f*Time.deltaTime);
+        if(transform.position.z<-40f){
+            Destroy(gameObject);
+        }
     }
 }

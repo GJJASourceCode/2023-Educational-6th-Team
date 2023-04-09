@@ -9,7 +9,7 @@ public class PlayerMove : MonoBehaviour
     public float jumpPower;
     public bool isJump, isSlide;
     public Rigidbody rb;
-     public static bool isLive;
+    public static bool isLive;
     public Animator anim;
     private List<float> railPos = new List<float>()
     {
@@ -22,18 +22,19 @@ public class PlayerMove : MonoBehaviour
         nowLine =1;
         jumpPower =300f;
         rb = GetComponent<Rigidbody>();
+        anim = GetComponent<Animator>();
+        isLive = true;
     }
     void OnCollisionEnter(Collision collision){
         if(collision.collider.gameObject.CompareTag("Passage")){
             isJump=false;
-             anim = GetComponent<Animator>();
-        isLive = true;
+            
         }
     }
     void Update()
     {
         if(isLive==false){
-            anim.SetTriger("falldown");
+            anim.SetTrigger("falldown")
         }
 
         if(Input.GetKeyDown(KeyCode.RightArrow)){
@@ -52,11 +53,10 @@ public class PlayerMove : MonoBehaviour
         if((Input.GetKeyDown("space"))&&(!isJump)){
             rb.AddForce(Vector3.up * jumpPower);
             isJump=true;
+            anim.SetTrigger("jump");
         }
         if(Input.GetKeyDown(KeyCode.DownArrow)){
             isSlide=true;
-            anim.SetTrigger("jump");
-        }
         transform.position = Vector3.Lerp(transform.position, new Vector3(railPos[nowLine], transform.position.y, transform.position.z), Time.deltaTime * moveTransitionSpeed);
     
     }

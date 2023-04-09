@@ -11,8 +11,8 @@ public class Ob : MonoBehaviour
     }
  void OnCollisionEnter(Collision Collision){
             if(Collision.collider.gameObject.CompareTag("Player")){
-                PlayerMove.isLive =false;
-                Debug.Log(PlayerMove.isLive)
+               PlayerMove.isLive =false;
+                Debug.Log(PlayerMove.isLive);
             }
         }
 

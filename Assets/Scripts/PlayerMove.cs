@@ -57,8 +57,10 @@ public class PlayerMove : MonoBehaviour
         }
         if(Input.GetKeyDown(KeyCode.DownArrow)){
             isSlide=true;
+            anim.SetTrigger("slide");
         }
         transform.position = Vector3.Lerp(transform.position, new Vector3(railPos[nowLine], transform.position.y, transform.position.z), Time.deltaTime * moveTransitionSpeed);
     
+
     }
 }

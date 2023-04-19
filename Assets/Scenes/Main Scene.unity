@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18173438, g: 0.22739892, b: 0.30742013, a: 1}
+  m_IndirectSpecularColor: {r: 0.18173435, g: 0.22739892, b: 0.30742013, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -159,6 +159,27 @@ MonoBehaviour:
   isJump: 0
   isSlide: 0
   rb: {fileID: 0}
+  anim: {fileID: 0}
+--- !u!95 &112839609
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 112839601}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 45e97064f8d687c41b2439d60958179e, type: 3}
+  m_Controller: {fileID: 9100000, guid: 26d356804e081e24583e6c194aee7700, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &410014087
 GameObject:
   m_ObjectHideFlags: 0
@@ -371,6 +392,10 @@ PrefabInstance:
     - target: {fileID: 4831751270801450882, guid: 2e1c80361c3a23d4b8c7edc15e837913, type: 3}
       propertyPath: m_Name
       value: Boy1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4831751270801450882, guid: 2e1c80361c3a23d4b8c7edc15e837913, type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8787607731713089693, guid: 2e1c80361c3a23d4b8c7edc15e837913, type: 3}

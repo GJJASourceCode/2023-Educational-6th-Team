@@ -7,7 +7,6 @@ public class Ob : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       
     }
  void OnCollisionEnter(Collision Collision){
             if(Collision.collider.gameObject.CompareTag("Player")){

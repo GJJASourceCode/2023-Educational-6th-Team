@@ -34,7 +34,7 @@ public class PlayerMove : MonoBehaviour
     void Update()
     {
         if(isLive==false){
-            anim.SetTrigger("falldown")
+            anim.SetTrigger("falldown");
         }
 
         if(Input.GetKeyDown(KeyCode.RightArrow)){
@@ -57,6 +57,7 @@ public class PlayerMove : MonoBehaviour
         }
         if(Input.GetKeyDown(KeyCode.DownArrow)){
             isSlide=true;
+        }
         transform.position = Vector3.Lerp(transform.position, new Vector3(railPos[nowLine], transform.position.y, transform.position.z), Time.deltaTime * moveTransitionSpeed);
     
     }
